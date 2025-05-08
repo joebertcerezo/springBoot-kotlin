@@ -30,7 +30,3 @@ spring-boot-kotlin/
 ```
 
 > Replace `yourdomain` and `project` with your actual package path.
-
----
-
-Would you like to include a sample controller/service/repo next, my king?
