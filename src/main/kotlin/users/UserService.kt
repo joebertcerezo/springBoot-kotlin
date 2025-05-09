@@ -9,8 +9,12 @@ class UserService(private val userRepo: UserRepo) {
   }
 
   fun save(): Unit {
-    userRepo.save(UserCreateDto("flb", "flb@gmail.com").toEntity())
-    userRepo.save(UserCreateDto("flb1", "flb@gmail.com").toEntity())
-    userRepo.save(UserCreateDto("flb2", "flb@gmail.com").toEntity())
+    userRepo.save(UserCreateDto("flb1", "flb1@gmail.com").toEntity())
+    userRepo.save(UserCreateDto("flb2", "flb2@gmail.com").toEntity())
+    userRepo.save(UserCreateDto("flb3", "flb3@gmail.com").toEntity())
+  }
+
+  fun getAll(): List<User> {
+    return userRepo.getAllUser()
   }
 }
