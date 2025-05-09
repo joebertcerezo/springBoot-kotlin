@@ -1,13 +1,14 @@
-package com.`try`.tryMuna.users
+package users
 
 import jakarta.persistence.*
+import java.util.UUID
 
 @Entity
 @Table(name = "\"USERS\"")
-data class User(
+class User(
         @Id 
-        @GeneratedValue(strategy = GenerationType.IDENTITY) 
-        val id: Integer,
+        // @GeneratedValue(strategy = GenerationType.IDENTITY) 
+        val id: UUID? = UUID.randomUUID(),
         @Column(nullable = false)
         val name: String,
         val email: String
