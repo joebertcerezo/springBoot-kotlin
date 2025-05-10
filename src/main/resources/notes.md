@@ -23,3 +23,9 @@ interface UserRepo : JpaRepository<User, UUID>, UserCustomRepository {
   // fun findAll(): List<User> // This is already provided by JpaRepository
 }
 ```
+In Gradle with Spring Boot and Kotlin:
+
+./gradlew bootRun - Builds and runs your Spring Boot application
+./gradlew bootRun --continuous or ./gradlew -t bootRun - Runs in continuous mode, watching for changes
+
+The -t flag is the short form of --continuous and provides similar functionality to SBT's tilde operator.
